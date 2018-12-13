@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.show_btn, .hide_btn {
+	color:  #0000FF;
+}
+
+.lead-paragraph {
+	font-weight: bold;
+}
+
+.show_btn:hover{
+	text-decoration: underline;
+
+}
+
+.hide_btn:hover{
+	text-decoration: underline;
+
+}
+
+.head-paragraph{
+
+		font-weight: bold;
+
+}
+
+.header {
+	font-family: Palatino;
+	font-size: 50px;
+	color: #281F5B;
+}
+.header_hr {
+	color: #281F5B;
+}
+
+img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+
+
+h1, h2 {
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+}
+h1 {
+	font-size: 40px;
+	margin-bottom: 8px;
+}
+
+h2 {
+
+	font-size: 25px;
+	margin-bottom: 10px;
+
+}
+
+
+.other {
+	margin-bottom: 40px;
+}
+
+.main-text {
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.author-text {
+	font-size: 22px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+
+
+.container {
+
+	/*width: 1140px;*/
+	/*margin: 20px auto 0 auto;*/
+
+	/* width: 1140px;
+ 	 display: block;
+  	background-color: #eee;
+  	margin-left: auto;
+  	margin-right: auto; */
+		display: grid;
+		grid-gap: 3px;
+		grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+#main {
+	/*background-color: #0000ff;*/
+	/* padding-right: 20px;
+	width: 100%;
+	float: left; */
+	 grid-column: 3 / -1;
+}
+
+.story {
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: auto 150px 150px;
+}
+.detail-paragraph {
+	 grid-column: 3 / 6;
+}
+.article_img {
+	 grid-column: 6 / -1;
+}
+
+.other-posts {
+	/*background-color: #00ff00;*/
+	width: 25%;
+	float: left;
+}
+
+.author-box {
+	/*background-color: #ffff00; */
+	padding-top: 20px
+	border-top: 1px solid #808080;
+}
+
+
+.author-box img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	float: left;
+}
+
+.date {
+
+	margin-bottom: 5px;
+}
+
+.news_seperator {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 959px) {
+	.container {
+		width: 100%;
+ 		 display: block;
+  		background-color: #000;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+}

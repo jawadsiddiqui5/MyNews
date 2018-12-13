@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      console.log("20");
+      var readMoreHTML = $('.read-more').html();
+
+      $('.read-more').append("<a  href='' class='read-more-link'>SHOW</a>");
+
+      $(".read-more").each(function(index) {
+        $(this).on("click", function() {
+          // For the boolean value
+          index.preventDefault();
+          var boolKey = $(this).data('selected');
+          // For the mammal value
+          var mammalKey = $(this).attr('id');
+          console.log(boolKey + ' ' + mammalKey);
+        });
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <p class="read-more">
+    This is a paragraph with hidden text after it.
+  </p>
+
+
+
+
+</body>
+
+
+
+</html>
