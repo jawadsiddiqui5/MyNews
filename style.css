@@ -6,6 +6,7 @@
   font-weight: bold;
 }
 
+
 .show_btn:hover {
   text-decoration: underline;
 }
@@ -197,7 +198,7 @@ h2 {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #281F5B;
   display: none;
 }
 
@@ -218,13 +219,22 @@ h2 {
 }
 
 .active {
-  background-color: #4CAF50;
+
+  background-color: #281F5B;
 }
 
 @media screen and (max-width: 1200px) {
   .story {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr auto;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .site-name {
+    font-size: 40px;
   }
 
   .text-section {
